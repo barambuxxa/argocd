@@ -1,0 +1,4 @@
+container:
+  image: gumidu/k8sphp:v1
+
+replicaCount: 4
