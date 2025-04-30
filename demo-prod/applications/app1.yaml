@@ -18,7 +18,7 @@ spec:
       - values_prod.yaml
       parameters:
       - name: "container.image"
-        value: gumidu/app1:latest
+        value: gumidu/k8sphp:v1
 
   project: default
   syncPolicy:
