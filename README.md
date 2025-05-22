@@ -1,28 +1,25 @@
-├── demo-dev
-│   ├── applications
-│   │   ├── app1.yaml
-│   │   └── app2.yaml
-│   └── root.yaml
-├── demo-prod
-│   ├── applications
-│   │   ├── app1.yaml
-│   │   └── app2.yaml
-│   └── root.yaml
-├── HelmCharts
-│   ├── MyChart1
-│   │   ├── Chart.yaml
-│   │   ├── templates
-│   │   │   ├── deployment.yaml
-│   │   │   └── service.yaml
-│   │   ├── values_dev.yaml
-│   │   ├── values_prod.yaml
-│   │   └── values.yaml
-│   └── MyChart2
-│       ├── Chart.yaml
-│       ├── templates
-│       │   ├── deployment.yaml
-│       │   └── service.yaml
-│       ├── values_dev.yaml
-│       ├── values_prod.yaml
-│       └── values.yaml
-└── README.md
+│
+├── HelmCharts             # All Helm Charts
+│   ├── ChartTest1
+│   │   ├── Chart.yaml
+│   │   ├── templates
+│   │   ├── values_dev.yaml    # DEV Values
+│   │   ├── values_prod.yaml   # PROD Values
+│   │   └── values.yaml        # Default Values
+│   └── ChartTest2
+│       ├── Chart.yaml
+│       ├── templates
+│       ├── values_dev.yaml    # DEV Values
+│       ├── values_prod.yaml   # PROD Values
+│       └── values.yaml        # Default Values
+│   
+├── demo-dev                   # EKS Cluster name
+│   ├── applications
+│   │   ├── app1.yaml
+│   │   └── app2.yaml
+│   └── root.yaml              # Root ArgoCD Application
+└── demo-prod                  # EKS Cluster name
+    ├── applications
+    │   ├── app1.yaml
+    │   └── app2.yaml
+    └── root.yaml              # Root ArgoCD Application    
