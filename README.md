@@ -30,6 +30,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 2 кластера prod и dev. В каждом кластере по 3 nodes. 
 
 Вот сами файлы в репозитории:
+
 ├── demo-dev
 │   ├── applications
 │   │   ├── app1.yaml
