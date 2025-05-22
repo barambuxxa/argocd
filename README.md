@@ -59,3 +59,11 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 │       ├── values_prod.yaml         # Прописано количетсво реплик
 │       └── values.yaml              # Прописано количетсво реплик и контейнер
 └── README.md
+
+demo-dev/root.yaml - в этом файле описано следующее: Создай в текущем кластере приложения из yaml файлов которые находятся в каталоге demo-dev/applications
+Эти application Будут делаться из helmов, которые расположены HelmCharts/MyChart1 и HelmCharts/MyChart2.
+В папке HelmChart расписаны все значения, для создания deployment и service.
+
+demo-prod/root.yaml - в этом файле описано следующее: Создай в текущем кластере приложения из yaml файлов которые находятся в каталоге demo-prod/applications
+
+После этого в веб-интерфейсе появляется данные по приложениям. Мы можем удалять оттуда и он будет автоматом запускать их основываясь на данных в гитхабе
